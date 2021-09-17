@@ -40,7 +40,7 @@ function initialize() {
     });
 
     window.onload = function () {
-        var timer = 60 * 5, minutes, seconds;
+        var timer = 60 * 10, minutes, seconds;
         var display = document.querySelector('#time');
         var displayScore = document.querySelector('#currentScore');
         var timeclock = setInterval(function () {
