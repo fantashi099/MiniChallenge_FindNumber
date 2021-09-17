@@ -24,11 +24,11 @@ function initialize() {
             }
 
             if (this.innerHTML === String(count)) {
-                score += 50;
+                score += 100;
                 element.style.color = "#5DC8CD";
                 count++;
             } else {
-                score -= 10;
+                score -= 40;
                 alert('Oops!!! Wrong number, current number is: ' + String(count));
             }
         }
@@ -42,12 +42,14 @@ function initialize() {
     window.onload = function () {
         var timer = 60 * 5, minutes, seconds;
         var display = document.querySelector('#time');
+        var displayScore = document.querySelector('#currentScore');
         var timeclock = setInterval(function () {
             minutes = parseInt(timer / 60, 10);
             seconds = parseInt(timer % 60, 10);
             seconds = seconds < 10 ? "0" + seconds : seconds;
     
             display.textContent = minutes + ":" + seconds;
+            displayScore.textContent = score;
             score -= 10
     
             if (--timer < 0) {
@@ -65,6 +67,11 @@ function initialize() {
     };
 }
 
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) { 
+        e.preventDefault();
+    }
+});
 initialize();
 
 function random_position(width, height, len) {

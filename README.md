@@ -1,0 +1,1 @@
+Gameplay: https://fantashi099.github.io/MiniChallenge_FindNumber/
