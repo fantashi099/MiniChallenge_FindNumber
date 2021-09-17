@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #728079;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+  
+h1, p {
+    color: #fff;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #00AE68;
+}
+
+.clear {
+    clear:both;
+}
+
+.container-btn {
+    padding-top: 14em;
+    padding-left: 1.5em;
+    margin: auto;
+    width: 10%;
+}
+
+a.btn {
+    display: block;
+    position: relative;
+    float: left;
+    width: 120px;
+    padding: 0;
+    margin: auto;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+    border-radius: 5px;
+    transition: all 0.2s ;
+}
+
+.lightblue {
+    background: #5DC8CD;
+}
+
+.btnPush {
+    box-shadow: 0px 5px 0px 0px #1E8185;
+}
+
+.btnPush:hover {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 0px 0px #1E8185;
+  }
+
+#gameplay {
+    height: 600px;
+    width: 1400px;
+    position: relative;
+    z-index: 0;
+    margin: 0;
+}
+
+.new_pos {
+    position: absolute ;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+
+.flex-container > div {
+    flex: 1;
+    text-align: center;
+  }
+
+@media (max-width: 1280px) {
+    .container-btn {
+        padding-left: 0;
+    }
+    #gameplay {
+        width: 800px;
+    }
+}
+
+@media (max-width: 600px) {
+    #gameplay {
+        width: 400px;
+    }
+}
